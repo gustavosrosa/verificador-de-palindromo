@@ -8,7 +8,6 @@ btnVerificarPalindromo.addEventListener('click', () => {
     let palavraSemEspacos = palavraSemCaracteres.replaceAll(' ', '');
 
     const palavraInvertida = palavraSemEspacos.split('').reverse().join('')
-    console.log(palavraSemEspacos, palavraInvertida)
 
     if (palavraInvertida == palavraSemEspacos) {
         resultadoP.textContent = `A palavra ${inputPalavra.value} é um palíndromo!`;
